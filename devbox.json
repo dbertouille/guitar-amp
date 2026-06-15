@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "cargo": "latest",
+    "clippy": "latest",
+    "rustfmt": "latest"
+  },
+  "shell": {
+    "init_hook": [
+      "git config core.hooksPath .githooks"
+    ]
+  }
+}

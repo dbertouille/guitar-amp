@@ -1,0 +1,17 @@
+[package]
+name = "guitar-amp"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+license = "MIT"
+description = "A real-time guitar amplifier with tanh soft-clipping distortion, built on cpal."
+repository = "https://github.com/dbertouille/guitar-amp"
+keywords = ["audio", "dsp", "guitar", "cpal", "realtime"]
+categories = ["multimedia::audio"]
+
+[dependencies]
+cpal = "0.15"
+anyhow = "1.0"
+ringbuf = "0.4"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }

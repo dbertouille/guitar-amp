@@ -1,0 +1,11 @@
+{
+  // Use the cargo binary from the devbox-provided Nix toolchain rather than a
+  // system/rustup cargo, so the editor matches the CLI build environment.
+  "rust-analyzer.cargo.cargoPath": "/Users/davidbertouille/workspace/guitar-amp/.devbox/nix/profile/default/bin/cargo",
+
+  // Put the devbox toolchain bin dir first on rust-analyzer's PATH so the tools
+  // cargo shells out to (rustfmt, clippy) come from the same toolchain.
+  "rust-analyzer.server.extraEnv": {
+    "PATH": "/Users/davidbertouille/workspace/guitar-amp/.devbox/nix/profile/default/bin:${env:PATH}"
+  }
+}
